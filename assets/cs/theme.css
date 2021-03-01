@@ -362,3 +362,69 @@ nav{
 .trainer .col-md-3:hover .bgWh{
     background: white;
 }
+
+
+/* Gym Tour */
+.secThree{
+    padding: 80px 0px;
+}
+
+#myCarousel .list-inline {
+    white-space:nowrap;
+    overflow-x:auto;
+}
+
+#myCarousel .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-left: initial;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+}
+
+#myCarousel .carousel-indicators > li {
+    width: initial;
+    height: initial;
+    text-indent: initial;
+    width: 100px;
+}
+
+#myCarousel .carousel-indicators > li.active img {
+    opacity: 0.7;
+}
+#myCarousel{
+    margin-top: -4rem;
+}
+#myCarousel .carousel-caption{
+    position: absolute;
+    /* right: 15%; */
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+    padding-left: 5%;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+}
+#myCarousel .carousel-caption h5{
+    font-family: 'Play', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+#myCarousel .carousel-caption p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#myCarousel .carousel-indicators > li.active{
+    border: 3px solid #16ADD3;
+    opacity: 1;
+}
+#myCarousel .carousel-indicators > li{
+    border: 3px solid transparent;
+    background-color: transparent;
+}
