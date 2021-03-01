@@ -504,6 +504,49 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 torqGym">
+                    <h2>TORQ GYM</h2>
+                    <p>Donec congue, diam sit amet ornare lobortis, arcu ex varius urna, et maximus dui ipsum fermentum lorem. Suspendisse potenti. Sed et magna vitae ex commodo ullamcorper. Duis diam enim, pulvinar sed blandit in, malesuada at felis. Sed nunc nulla, feugiat vel elit vel, tincidunt sagittis arcu. Ut condimentum mi ac eros vehicula, id pretium lacus eleifend. Donec rhoncus metus at mattis faucibus. Aliquam finibus lectus nec condimentum finibus. Sed volutp aculis.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h2>LOCATION</h2>
+                    <p>1st Floor, Pro Hub
+                    Gandhi Bhavan Road
+                    Thycaud – 695 014
+                    Thiruvananthapuram</p>
+                    <p>+91-9410077088
+                    +91-9820055088</p>
+
+                    <h2 class="gymhrs">GYM HOURS</h2>
+                    <p>Monday - Friday:
+                    07:00 - 21:00</p>
+                    <p>Saturday:
+                    07:00 - 16:00</p>
+                    <p>Sunday Closed</p>
+                </div>
+                <div class="col-lg-5">
+                    <h2>LET'S TALK</h2>
+                    <form>
+                        <div class="inputBox">
+                            <input type="text" name="" id="" required="required">
+                            <span>Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="" id="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" id="" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
@@ -527,6 +570,21 @@
               $('#reviewSlide').carousel({
                     interval: 2100
                 })
+    </script>
+
+    <script>
+        const inputs = document.querySelectorAll('input[type="text"]');
+
+            [].forEach.call(inputs, input => {
+                const label = document.querySelector(`[for="${input.id}"]`);
+                input.addEventListener('input', function () {
+                    if (this.value && this.value.length > 0) {
+                        label.setAttribute('hidden');
+                    } else {
+                        label.removeAttribute('hidden', '');
+                    }
+                });
+            });
     </script>
 </body>
 
