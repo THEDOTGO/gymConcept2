@@ -289,12 +289,12 @@ nav{
     filter: grayscale(100%);
     transition: 0.2s;
 }
-.trainer .col-md-3:hover img{
+.trainer .col-lg-3:hover img{
     -webkit-filter: none; /* Safari 6.0 - 9.0 */
     filter: none;
     transition: 0.2s;
 }
-.trainer .col-md-3:hover .overlayDet{
+.trainer .col-lg-3:hover .overlayDet{
     border: 3px solid #16ADD3;
 }
 .plusIcon{
